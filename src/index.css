@@ -207,14 +207,14 @@ a:last-child:nth-child(3) {
 
   .navigationLink button {
     padding: 5px 12px;
-    font-size: 0.7rem;
+    font-size: 0.78rem;
   }
   .boxCategories div h1 {
     font-size: 1.1rem;
   }
   .boxCategories div p {
-    width: 90%;
-    padding: 4px;
-    font-size: 0.5rem;
+    width: 93%;
+    padding: 3px;
+    font-size: 0.6rem;
   }
 }
