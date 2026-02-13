@@ -49,7 +49,7 @@ html {
   border-radius: 100px;
   background: rgba(174, 145, 145, 0.047);
   box-shadow: 0.1px 0.1px 1px rgb(189, 189, 189);
-  backdrop-filter: blur(10px); /* افکت محو کردن پس زمینه */
+  backdrop-filter: blur(30px); /* افکت محو کردن پس زمینه */
   border-radius: 100px;
 
   text-decoration: none;
@@ -167,7 +167,7 @@ a:last-child:nth-child(3) {
   }
   .navigationLink button {
     padding: 5px 12px;
-    font-size: 0.78rem;
+    font-size: 0.88rem;
   }
   .Categories {
     width: 99%;
@@ -176,7 +176,7 @@ a:last-child:nth-child(3) {
     height: 200px;
   }
   .boxCategories div h1 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
   .boxCategories div p {
     width: 95%;
@@ -207,7 +207,7 @@ a:last-child:nth-child(3) {
 
   .navigationLink button {
     padding: 5px 12px;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
   .boxCategories div h1 {
     font-size: 1.1rem;
