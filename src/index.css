@@ -1,0 +1,220 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #0e071b;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Vazir", "Tahoma", "Arial", sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+/* 
+  navigation
+*/
+.navigation {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigationWidth {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigationLink {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  padding: 13px 16px;
+  border-radius: 100px;
+  background: rgba(174, 145, 145, 0.047);
+  box-shadow: 0.1px 0.1px 1px rgb(189, 189, 189);
+  backdrop-filter: blur(10px); /* افکت محو کردن پس زمینه */
+  border-radius: 100px;
+
+  text-decoration: none;
+}
+.navigationLink button {
+  padding: 7px 20px;
+  font-size: 16px;
+  background-color: #ffffff0c;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.navigationLink button:hover {
+  background-color: rgb(94, 80, 134);
+}
+.active button {
+  border: 1px solid white;
+}
+/* 
+Header
+*/
+.Header {
+  padding-top: 1%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.Categories {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  place-content: center;
+  gap: 13px;
+  position: relative;
+}
+.boxCategories {
+  box-shadow: 0.1px 0.1px 2px rgb(187, 187, 187);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  /* background: rgba(255, 255, 255, 0.164);
+  backdrop-filter: blur(10px); */
+}
+a:last-child:nth-child(3) {
+  grid-column: span 2;
+}
+.boxCategories img {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: brightness(30%) blur(0.8px);
+}
+.boxCategories img:hover {
+  filter: brightness(50%);
+}
+.boxCategories div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.boxCategories div h1 {
+  color: white;
+}
+.boxCategories div p {
+  width: 55%;
+  text-align: center;
+  color: rgb(201, 201, 201);
+  padding: 10px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.164);
+  backdrop-filter: blur(10px);
+}
+/* 
+  responsive
+*/
+@media only screen and (max-width: 1100px) {
+  .navigationLink {
+    width: 45%;
+  }
+  .navigationLink button {
+    font-size: 13px;
+    padding: 5px 13px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .navigationWidth {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+  }
+  .navigationLink {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    display: flex;
+    width: 90%;
+    color: white;
+  }
+  .navigationLink a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  .navigationLink button {
+    padding: 5px 12px;
+    font-size: 0.78rem;
+  }
+  .Categories {
+    width: 99%;
+  }
+  .boxCategories img {
+    height: 200px;
+  }
+  .boxCategories div h1 {
+    font-size: 1.3rem;
+  }
+  .boxCategories div p {
+    width: 95%;
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .navigationWidth {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+  }
+  .navigationLink {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    display: flex;
+    width: 99%;
+    color: white;
+  }
+  .navigationLink a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .navigationLink button {
+    padding: 5px 12px;
+    font-size: 0.6rem;
+  }
+  .boxCategories div h1 {
+    font-size: 1.1rem;
+  }
+  .boxCategories div p {
+    width: 90%;
+    padding: 4px;
+    font-size: 0.5rem;
+  }
+}
