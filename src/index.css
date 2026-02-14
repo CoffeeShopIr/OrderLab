@@ -121,6 +121,7 @@ a:last-child:nth-child(3) {
 }
 .boxCategories div h1 {
   color: white;
+  padding-bottom: 15px;
 }
 .boxCategories div p {
   width: 55%;
@@ -133,6 +134,53 @@ a:last-child:nth-child(3) {
   backdrop-filter: blur(10px);
 }
 /* 
+About
+*/
+.about {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.aboutText {
+  text-align: center;
+  font-size: larger;
+}
+.aboutCenter {
+  padding: 100px;
+  width: 90%;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: rgba(174, 145, 145, 0.047);
+  box-shadow: 0.1px 0.1px 1px rgb(189, 189, 189);
+  backdrop-filter: blur(30px);
+}
+.aboutImg img {
+  background: rgba(174, 145, 145, 0.047);
+  box-shadow: 0.1px 0.1px 1px rgb(189, 189, 189);
+  backdrop-filter: blur(30px);
+  border-radius: 100px;
+  padding: 10px;
+  width: 100px;
+}
+.aboutImg img:nth-child(1) {
+  transform: translate(-50px, 50px);
+}
+.aboutImg img:nth-child(2) {
+  transform: translate(10px, -80px);
+}
+.aboutImg img:nth-child(3) {
+  transform: translate(70px, 52px);
+}
+.aboutImg img:nth-child(4) {
+  transform: translate(-190px, 200px);
+}
+.aboutImg img:nth-child(5) {
+  transform: translate(-290px, 60px);
+}
+
+/* 
   responsive
 */
 @media only screen and (max-width: 1100px) {
@@ -142,6 +190,30 @@ a:last-child:nth-child(3) {
   .navigationLink button {
     font-size: 13px;
     padding: 5px 13px;
+  }
+  .aboutCenter {
+    padding: 70px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .aboutImg {
+    display: flex;
+    justify-content: space-between;
+  }
+  .aboutImg img:nth-child(1) {
+    transform: translate(0px, 0px);
+  }
+  .aboutImg img:nth-child(2) {
+    transform: translate(0px, 0px);
+  }
+  .aboutImg img:nth-child(3) {
+    transform: translate(0px, 0px);
+  }
+  .aboutImg img:nth-child(4) {
+    transform: translate(0px, 0px);
+  }
+  .aboutImg img:nth-child(5) {
+    transform: translate(0, 0px);
   }
 }
 @media only screen and (max-width: 800px) {
@@ -182,6 +254,15 @@ a:last-child:nth-child(3) {
     width: 95%;
     font-size: 0.8rem;
   }
+  .aboutCenter {
+    padding: 50px;
+  }
+  .aboutText {
+    font-size: 0.9rem;
+  }
+  .aboutImg img {
+    width: 65px;
+  }
 }
 @media only screen and (max-width: 400px) {
   .navigationWidth {
@@ -204,7 +285,16 @@ a:last-child:nth-child(3) {
     align-items: center;
     text-decoration: none;
   }
-
+  .Categories {
+    display: grid;
+    grid-template-columns: 90%;
+  }
+  a:last-child:nth-child(3) {
+    grid-column: span 1;
+  }
+  .boxCategories img{
+    height: 180px;
+  }
   .navigationLink button {
     padding: 5px 12px;
     font-size: 0.78rem;
@@ -216,5 +306,17 @@ a:last-child:nth-child(3) {
     width: 93%;
     padding: 3px;
     font-size: 0.6rem;
+  }
+
+  .aboutCenter {
+    padding: 20px;
+  }
+  .aboutText {
+    padding-top: 10px;
+    font-size: 0.74rem;
+    line-height: 1.3rem;
+  }
+  .aboutImg img {
+    width: 40px;
   }
 }
